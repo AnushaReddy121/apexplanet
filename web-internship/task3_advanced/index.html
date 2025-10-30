@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 3 – Advanced</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    h1 {
+      color: #007bff;
+      margin-top: 40px;
+    }
+    #apiSection, #quizSection {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 80%;
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 20px;
+      text-align: left;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .question {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Task 3 – Advanced</h1>
+
+  <div id="apiSection">
+    <h2>🌐 API Data Fetch Example</h2>
+    <p>Click below to fetch sample user data:</p>
+    <button onclick="fetchData()">Fetch Data</button>
+    <ul id="apiResult"></ul>
+  </div>
+
+  <div id="quizSection">
+    <h2>🧠 Quick Quiz</h2>
+    <div id="quizContainer"></div>
+    <button onclick="checkAnswers()">Submit Answers</button>
+    <p id="score"></p>
+  </div>
+
+  <script src="api.js"></script>
+  <script src="quiz.js"></script>
+</body>
+</html>
